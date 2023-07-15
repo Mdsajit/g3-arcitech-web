@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,500;1,600;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Work Sans', sans-serif;
+}
+
+/*header style added*/
+header {
+    background: rgba(255, 144, 14, 0.10);
+    padding: 50px 240px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #131313;
+}
+nav > ul {
+    display: flex;
+}
+
+nav li {
+    list-style: none;
+    margin-right: 30px;
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+nav li a {
+    text-decoration: none;
+}
+
+/*banner part*/
+.banner-content {
+    max-width: 800px;
+    text-align: center;
+    margin: 0 auto;
+}
+.banner img {
+    margin-top: 20px;
+    width: 100%;
+}
+.banner-title {
+    font-size: 4rem;
+    font-weight: 700;
+    color: #131313;
+}
+.banner-description {
+    color: #727272;
+}
+
+.btn-primary {
+    border-radius: 5px;
+    background-color: #ff900e;
+    padding: 15px 25px;
+    cursor: pointer;
+    font-size: 1.25rem;
+    color: #fff;
+    border: none;
+}
+/*main section*/
+main {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.team-container {
+    display: flex;
+    align-items: center;
+}
+
+.teams-img-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+}
+
+.team-content {
+    padding: 0 70px;
+}
+
+.team-title {
+    font-size: 2.8rem;
+}
+
+.team-title .quick-list {
+    color: #727272;
+}
+.team-title .text-features {
+ font-weight: 700;
+ color: #ff900e;
+}
+
+
+
+
+
+
+
+
+
+/*responsive media quaries*/
+
+@media screen and (max-width:576px){
+    header {
+        padding: 20px;
+    }
+    nav,
+    .team-container
+    {
+        flex-direction: column;
+    }
+
+    .teams-img-container {
+        grid-template-columns: 1fr;
+    }
+    .teams-content {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+
+@media screen and (min-width:576px) and (max-width:960px){
+    header {
+        padding: 50px;
+    }
+    nav {
+        flex-direction: column;
+    }
+}
